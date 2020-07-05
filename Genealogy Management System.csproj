@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E8CFE90-D530-4E77-89B2-B8DA4DA46C11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Genealogy_Management_System</RootNamespace>
+    <AssemblyName>Genealogy Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrators.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrators.Designer.cs">
+      <DependentUpon>Administrators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Branch_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Branch_Information.Designer.cs">
+      <DependentUpon>Branch_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloseRelatives_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseRelatives_Information.Designer.cs">
+      <DependentUpon>CloseRelatives_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event_Add.Designer.cs">
+      <DependentUpon>Event_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event_Change.Designer.cs">
+      <DependentUpon>Event_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Event.Designer.cs">
+      <DependentUpon>Family_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event_Manage.Designer.cs">
+      <DependentUpon>Event_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genealogy_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Genealogy_Information.Designer.cs">
+      <DependentUpon>Genealogy_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genealogy_Management_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Genealogy_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Genealogy_Management_SystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Genealogy_Management_SystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Genealogy_Management_SystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Genealogy_Management_SystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Manage.Designer.cs">
+      <DependentUpon>G_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_SetUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_SetUp.Designer.cs">
+      <DependentUpon>G_SetUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M_Add.Designer.cs">
+      <DependentUpon>M_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M_Manage.Designer.cs">
+      <DependentUpon>M_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal_Information.Designer.cs">
+      <DependentUpon>Personal_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdinaryUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdinaryUsers.Designer.cs">
+      <DependentUpon>OrdinaryUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrators.resx">
+      <DependentUpon>Administrators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Branch_Information.resx">
+      <DependentUpon>Branch_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseRelatives_Information.resx">
+      <DependentUpon>CloseRelatives_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event_Add.resx">
+      <DependentUpon>Event_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event_Change.resx">
+      <DependentUpon>Event_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Event.resx">
+      <DependentUpon>Family_Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event_Manage.resx">
+      <DependentUpon>Event_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genealogy_Information.resx">
+      <DependentUpon>Genealogy_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Manage.resx">
+      <DependentUpon>G_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_SetUp.resx">
+      <DependentUpon>G_SetUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M_Add.resx">
+      <DependentUpon>M_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M_Manage.resx">
+      <DependentUpon>M_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdinaryUsers.resx">
+      <DependentUpon>OrdinaryUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal_Information.resx">
+      <DependentUpon>Personal_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Genealogy_Management_SystemDataSet.xsc">
+      <DependentUpon>Genealogy_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Genealogy_Management_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet.xss">
+      <DependentUpon>Genealogy_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet1.xsc">
+      <DependentUpon>Genealogy_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Genealogy_Management_SystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet1.xss">
+      <DependentUpon>Genealogy_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet2.xsc">
+      <DependentUpon>Genealogy_Management_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Genealogy_Management_SystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet2.xss">
+      <DependentUpon>Genealogy_Management_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
