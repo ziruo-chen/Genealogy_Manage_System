@@ -23,3 +23,28 @@ E:\软件工程原理\Genealogy Management System\Genealogy Management System\ob
 E:\软件工程原理\Genealogy Management System\Genealogy Management System\obj\Debug\Genealogy_Management_System.Personal_Information.resources
 E:\软件工程原理\Genealogy Management System\Genealogy Management System\obj\Debug\Genealogy_Management_System.Event_Add.resources
 E:\软件工程原理\Genealogy Management System\Genealogy Management System\obj\Debug\Genealogy_Management_System.Event_Change.resources
+E:\软件工程原理\Genealogy Management System\bin\Debug\Genealogy Management System.exe.config
+E:\软件工程原理\Genealogy Management System\bin\Debug\Genealogy Management System.exe
+E:\软件工程原理\Genealogy Management System\bin\Debug\Genealogy Management System.pdb
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy Management System.csprojAssemblyReference.cache
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Administrators.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Branch_Information.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.CloseRelatives_Information.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Event_Add.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Event_Change.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Family_Event.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Event_Manage.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Genealogy_Information.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.G_Manage.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.G_SetUp.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.M_Add.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.M_Manage.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.OrdinaryUsers.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Personal_Information.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Register.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Login.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy_Management_System.Properties.Resources.resources
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy Management System.csproj.GenerateResource.cache
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy Management System.csproj.CoreCompileInputs.cache
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy Management System.exe
+E:\软件工程原理\Genealogy Management System\obj\Debug\Genealogy Management System.pdb
