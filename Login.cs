@@ -49,6 +49,8 @@ namespace Genealogy_Management_System
             SqlConnection con = new SqlConnection(constr);
             con.Open();
 
+            
+
             SqlCommand com = new SqlCommand("Select M_ID R_psw from Member where M_ID='" + username + "'and R_psw='" + pwd + "'", con);
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataSet ds = new DataSet();

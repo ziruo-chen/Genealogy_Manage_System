@@ -45,23 +45,27 @@ namespace Genealogy_Management_System
             con.Open();
             string s;
 
+            //if()
+            //判断事件ID是否是本人族谱的
+            
+            //(select G_ID from Member where M_ID='"+Globaldate.ID+"')
             if (textBox1.Text != "" && textBox2.Text == "" && textBox3.Text == "")
-                s = "select * from Event where E_ID='" + textBox1.Text + "'";
+                s = "select * from Event where E_ID='" + textBox1.Text + "' and G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "')";
             else if (textBox1.Text == "" && textBox2.Text != "" && textBox3.Text == "")
-                s = "select * from Event where  E_Date='" + textBox2.Text + "' ";
+                s = "select * from Event where  E_Date='" + textBox2.Text + "'and G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "') ";
             else if (textBox1.Text == "" && textBox2.Text == "" && textBox3.Text != "")
-                s = "select * from Event where  E_Name='" + textBox3.Text + "'";
+                s = "select * from Event where  E_Name='" + textBox3.Text + "'and G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "')";
             else if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text == "")
-                s = "select * from Event where E_ID='" + textBox1.Text + "'and E_Date='" + textBox2.Text + "' ";
+                s = "select * from Event where E_ID='" + textBox1.Text + "'and E_Date='" + textBox2.Text + "' and G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "') ";
             else if (textBox1.Text != "" && textBox2.Text == "" && textBox3.Text != "")
-                s = "select * from Event where E_ID='" + textBox1.Text + "' and E_Name='" + textBox3.Text + "'";
+                s = "select * from Event where E_ID='" + textBox1.Text + "' and E_Name='" + textBox3.Text + "' and G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "')";
             else if (textBox1.Text == "" && textBox2.Text != "" && textBox3.Text != "")
-                s = "select * from Event where E_Date='" + textBox2.Text + "' and E_Name='" + textBox3.Text + "'";
+                s = "select * from Event where E_Date='" + textBox2.Text + "' and E_Name='" + textBox3.Text + "' and G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "')";
             else if (textBox1.Text == "" && textBox2.Text == "" && textBox3.Text == "")
-                s = "select * from Event";
+                s = "select * from Event where G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "')";
 
             else
-                s = "select * from Event where E_ID='" + textBox1.Text + "'and E_Date='" + textBox2.Text + "' and E_Name='" + textBox3.Text + "'";
+                s = "select * from Event where E_ID='" + textBox1.Text + "'and E_Date='" + textBox2.Text + "' and E_Name='" + textBox3.Text + "' and G_ID=(select G_ID from Member where M_ID='" + Globaldate.ID + "')";
 
             SqlCommand comm = new SqlCommand(s, con);
             SqlDataAdapter sda = new SqlDataAdapter();
@@ -71,6 +75,11 @@ namespace Genealogy_Management_System
             sda.Fill(ds, "Event");
             dataGridView1.DataSource = ds.Tables[0];
             con.Close();
+        }
+
+        private void eventBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

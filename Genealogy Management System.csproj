@@ -110,6 +110,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Genealogy_Management_SystemDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Genealogy_Management_SystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Genealogy_Management_SystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Genealogy_Management_SystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Genealogy_Management_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Genealogy_Management_SystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Genealogy_Management_SystemDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Globaldate.cs" />
     <Compile Include="G_Manage.cs">
       <SubType>Form</SubType>
@@ -250,6 +265,39 @@
     </None>
     <None Include="Genealogy_Management_SystemDataSet2.xss">
       <DependentUpon>Genealogy_Management_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet3.xsc">
+      <DependentUpon>Genealogy_Management_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Genealogy_Management_SystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet3.xss">
+      <DependentUpon>Genealogy_Management_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet4.xsc">
+      <DependentUpon>Genealogy_Management_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Genealogy_Management_SystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet4.xss">
+      <DependentUpon>Genealogy_Management_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet5.xsc">
+      <DependentUpon>Genealogy_Management_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Genealogy_Management_SystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Genealogy_Management_SystemDataSet5.xss">
+      <DependentUpon>Genealogy_Management_SystemDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

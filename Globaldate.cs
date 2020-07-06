@@ -8,6 +8,7 @@ namespace Genealogy_Management_System
 {
     class Globaldate
     {
-        public static string ID;
+        public static string ID="M01";
+        
     }
 }

@@ -39,18 +39,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.genealogy_Management_SystemDataSet2 = new Genealogy_Management_System.Genealogy_Management_SystemDataSet2();
             this.eventBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.genealogy_Management_SystemDataSet2 = new Genealogy_Management_System.Genealogy_Management_SystemDataSet2();
             this.eventTableAdapter = new Genealogy_Management_System.Genealogy_Management_SystemDataSet2TableAdapters.EventTableAdapter();
-            this.gIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.E_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eEventDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eNoteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genealogy_Management_SystemDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genealogy_Management_SystemDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -128,9 +127,8 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.gIDDataGridViewTextBoxColumn,
-            this.eIDDataGridViewTextBoxColumn,
             this.eDateDataGridViewTextBoxColumn,
+            this.E_ID,
             this.eEventDataGridViewTextBoxColumn,
             this.eNameDataGridViewTextBoxColumn,
             this.eNoteDataGridViewTextBoxColumn});
@@ -142,33 +140,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(789, 280);
             this.dataGridView1.TabIndex = 10;
             // 
+            // eventBindingSource
+            // 
+            this.eventBindingSource.DataMember = "Event";
+            this.eventBindingSource.DataSource = this.genealogy_Management_SystemDataSet2;
+            this.eventBindingSource.CurrentChanged += new System.EventHandler(this.eventBindingSource_CurrentChanged);
+            // 
             // genealogy_Management_SystemDataSet2
             // 
             this.genealogy_Management_SystemDataSet2.DataSetName = "Genealogy_Management_SystemDataSet2";
             this.genealogy_Management_SystemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // eventBindingSource
-            // 
-            this.eventBindingSource.DataMember = "Event";
-            this.eventBindingSource.DataSource = this.genealogy_Management_SystemDataSet2;
-            // 
             // eventTableAdapter
             // 
             this.eventTableAdapter.ClearBeforeFill = true;
-            // 
-            // gIDDataGridViewTextBoxColumn
-            // 
-            this.gIDDataGridViewTextBoxColumn.DataPropertyName = "G_ID";
-            this.gIDDataGridViewTextBoxColumn.HeaderText = "G_ID";
-            this.gIDDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.gIDDataGridViewTextBoxColumn.Name = "gIDDataGridViewTextBoxColumn";
-            // 
-            // eIDDataGridViewTextBoxColumn
-            // 
-            this.eIDDataGridViewTextBoxColumn.DataPropertyName = "E_ID";
-            this.eIDDataGridViewTextBoxColumn.HeaderText = "E_ID";
-            this.eIDDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.eIDDataGridViewTextBoxColumn.Name = "eIDDataGridViewTextBoxColumn";
             // 
             // eDateDataGridViewTextBoxColumn
             // 
@@ -176,6 +161,13 @@
             this.eDateDataGridViewTextBoxColumn.HeaderText = "E_Date";
             this.eDateDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.eDateDataGridViewTextBoxColumn.Name = "eDateDataGridViewTextBoxColumn";
+            // 
+            // E_ID
+            // 
+            this.E_ID.DataPropertyName = "E_ID";
+            this.E_ID.HeaderText = "E_ID";
+            this.E_ID.MinimumWidth = 8;
+            this.E_ID.Name = "E_ID";
             // 
             // eEventDataGridViewTextBoxColumn
             // 
@@ -218,8 +210,8 @@
             this.Text = "Family_Event";
             this.Load += new System.EventHandler(this.Family_Event_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genealogy_Management_SystemDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genealogy_Management_SystemDataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,9 +230,8 @@
         private Genealogy_Management_SystemDataSet2 genealogy_Management_SystemDataSet2;
         private System.Windows.Forms.BindingSource eventBindingSource;
         private Genealogy_Management_SystemDataSet2TableAdapters.EventTableAdapter eventTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn eIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn E_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn eEventDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eNoteDataGridViewTextBoxColumn;
