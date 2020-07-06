@@ -19,6 +19,8 @@ namespace Genealogy_Management_System
             InitializeComponent();
         }
 
+        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -31,6 +33,7 @@ namespace Genealogy_Management_System
 
         private void Personal_Information_Load(object sender, EventArgs e)
         {
+            textBox1.Text = Globaldate.ID;
 
         }
 
@@ -39,6 +42,16 @@ namespace Genealogy_Management_System
             Thread th = new Thread(delegate () { new OrdinaryUsers().ShowDialog(); });
             th.Start();
             this.Close();
+        }
+        //修改自己的个人信息
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

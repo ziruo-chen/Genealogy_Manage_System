@@ -16,6 +16,7 @@ namespace Genealogy_Management_System
 {
     public partial class OrdinaryUsers : Form
     {
+        public static string ID;
         public OrdinaryUsers()
         {
             InitializeComponent();
@@ -25,9 +26,10 @@ namespace Genealogy_Management_System
         {
 
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
+           
             Thread th = new Thread(delegate () { new Personal_Information().ShowDialog(); });
             th.Start();
             this.Close();

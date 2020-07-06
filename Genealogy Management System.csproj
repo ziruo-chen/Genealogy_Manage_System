@@ -110,6 +110,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Genealogy_Management_SystemDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Globaldate.cs" />
     <Compile Include="G_Manage.cs">
       <SubType>Form</SubType>
     </Compile>

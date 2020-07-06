@@ -19,15 +19,22 @@ namespace Genealogy_Management_System
             InitializeComponent();
         }
 
+        
+       
+
         private void Login_Load(object sender, EventArgs e)
         {
             //设置密码输入格式*
             textBox2.PasswordChar = '*';
             textBox2.UseSystemPasswordChar = true;
+
+            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
             //进入注册界面
             Thread th = new Thread(delegate () { new Register().ShowDialog(); });
             th.Start();
@@ -52,6 +59,11 @@ namespace Genealogy_Management_System
                 MessageBox.Show("登陆成功");
                 textBox1.Visible = true;
                 textBox2.Visible = true;
+                //保存当前ID
+
+                Globaldate.ID = textBox1.Text.Trim();
+
+
                 //登陆成功，进入普通用户界面
                 Thread th = new Thread(delegate () { new OrdinaryUsers().ShowDialog(); });
                 th.Start();
@@ -92,6 +104,10 @@ namespace Genealogy_Management_System
                 MessageBox.Show("登陆成功");
                 textBox1.Visible = true;
                 textBox2.Visible = true;
+
+                //保存用户登录的ID
+                
+
                 //登陆成功，进入管理员界面
                 Thread th = new Thread(delegate () { new Administrators().ShowDialog(); });
                 th.Start();
@@ -107,5 +123,9 @@ namespace Genealogy_Management_System
             }
             con.Close();
         }
+
+       
     }
+    
+
 }
